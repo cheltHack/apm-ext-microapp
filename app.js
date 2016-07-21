@@ -46,10 +46,23 @@ app.use('/', serveStatic('public', {
 	setHeaders: setCacheControl
 }));
 
+// Note: If you're not running behind an app hub, you'll need to add an
+//       'Authorization' and tenant headers to any authenticated service requests.
+//       For example, if you set an environment variables called
+//       'AUTHTOKEN' and TENANT you need to get Headers as below:
+function getHeaders() {
+    let headers = {
+    'Authorization': process.env.AUTHTOKEN,
+    'tenant': process.env.TOKEN
+    }
+    return headers;
+}
+let myHeaders = getHeaders();
 
 app.use('/api/*', (req, res, next) => {
   proxy({
     url: assetPath + '/*',
+    headers: myHeaders,
     timeout: parseInt(req.headers.timeout) || 3600000
   })(req, res, next);
 });

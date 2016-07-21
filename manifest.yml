@@ -1,8 +1,8 @@
 ---
 applications:
-  - name: apm-ext-app-demo
-    host: apm-ext-app-demo
-    domain: run.asv-pr.ice.predix.io
+  - name: apm-ext-app-hackapm
+    host: apm-ext-app-hackapm
+    domain: run.aws-usw02-pr.ice.predix.io
     buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
     memory: 128M
     disk_quota: 128M
@@ -10,4 +10,4 @@ applications:
     path : ./builds/asset-microapp-2.4.0-SNAPSHOT.zip
 
     services:
-      - apm-ext-service-demo
+      - apm-ext-service-hackapm

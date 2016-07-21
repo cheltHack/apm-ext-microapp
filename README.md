@@ -39,15 +39,10 @@ If you haven't already done so, install JSPM & Bower
 % sudo npm install -g gulp
 ```
 
-Make sure 'github.build.ge.com' is in your no_proxy. In your .zshrc or whatever:
-```
-$ export no_proxy="github.com"
-```
-
-If you haven't already created an endpoint for Github Enterprise, do so:
+If you haven't already created an endpoint for Github, do so:
 ```
 % jspm registry create ge jspm-github
-% Are you setting up a GitHub Enterprise registry? [yes]:yes
+% Are you setting up a GitHub registry? [yes]:yes
 % Enter the hostname of your GitHub Enterprise server:github.com
 ```
 

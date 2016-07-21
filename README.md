@@ -41,15 +41,14 @@ If you haven't already done so, install JSPM & Bower
 
 Make sure 'github.build.ge.com' is in your no_proxy. In your .zshrc or whatever:
 ```
-$ export no_proxy="github.build.ge.com"
+$ export no_proxy="github.com"
 ```
 
 If you haven't already created an endpoint for Github Enterprise, do so:
 ```
 % jspm registry create ge jspm-github
 % Are you setting up a GitHub Enterprise registry? [yes]:yes
-% Enter the hostname of your GitHub Enterprise server:github.build.ge.com
-% Would you like to set up your GitHub credentials? [yes]:no
+% Enter the hostname of your GitHub Enterprise server:github.com
 ```
 
 ## Installation
@@ -58,12 +57,12 @@ If you haven't already created an endpoint for Github Enterprise, do so:
 
 Clone this repo
 ```
-% git clone https://github.build.ge.com/IIA-Asset/asset-micro-app.git
+% git clone https://github.com/apmdev/apm-ext-microapp.git
 ```
 
 Use JSPM and NPM to install all dependencies
 ```
-% cd asset-micro-app
+% cd apm-ext-microapp
 % npm install
 % jspm install
 ```

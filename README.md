@@ -67,7 +67,9 @@ This will create `src/jspm_packages`, `src/bower_components` and `node_modules` 
 
 Set ENV variables
 ```
-Set ENV variables for AUTHTOKEN and TENANT before you start server locally. To get token and tenant info, download and import postman collection @ https://github.com/apmdev/tools/blob/master/service-apis.postman_collection.json and run init-environment
+Set ENV variables for AUTHTOKEN and TENANT before you start server locally. 
+To get token and tenant info, download and import postman collection @
+https://github.com/apmdev/tools/blob/master/service-apis.postman_collection.json and run init-environment
 
 % export AUTHTOKEN="<your auth token>"
 % export TENANT="<your tenant UUID>"

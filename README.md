@@ -9,7 +9,7 @@ This is a proof-of-concept for a microapp seed, using Node/Express and ES6/Babel
 
 The first rule of building big single-page applications is, "don't build big single-page-applications." As some of our projects have grown, it has become clear that we need a way to break them into multiple, smaller single-page applications. For now, we're calling these "microapps".
 
-The idea behind a microapp is that it is designed to load into the content area of the App Hub (prototype at https://github.build.ge.com/hubs/ui-shell). The App Hub will include the microapp's `index.html` directly into the content area on its template, and proxy any further requests directly to the microapp itself.
+The idea behind a microapp is that it is designed to load into the content area of the App Hub. The App Hub will include the microapp's `index.html` directly into the content area on its template, and proxy any further requests directly to the microapp itself.
 
 A microapp should contain all the `<link>` and `<script>` tags needed to run itself. It should expect nothing other than basic styling from the App Hub. Because the App Hub loads no public libraries, the microapp is free to use whatever client-side stack is appropriate without fear of conflicts.
 

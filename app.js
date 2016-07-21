@@ -54,7 +54,7 @@ app.use('/', serveStatic('public', {
 function getHeaders() {
     let headers = {
     'Authorization': process.env.AUTHTOKEN,
-    'tenant': process.env.TOKEN
+    'tenant': process.env.TENANT
     }
     return headers;
 }

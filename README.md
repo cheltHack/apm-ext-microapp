@@ -60,7 +60,7 @@ Use JSPM and NPM to install all dependencies
 % npm install
 % jspm install
 ```
-This will create `src/jspm_packages`, `src/bower_components` and `node_modules` folders.
+This will create `src/public/jspm_packages`, `src/public/bower_components` and `node_modules` folders.
 
 
 Set ENV variables

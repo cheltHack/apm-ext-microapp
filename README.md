@@ -31,6 +31,7 @@ When running behind an App Hub, your URLs will have a path prepended to them, to
 In the second case, your microapp's path won't be prepended to the URL, resulting in a 404 or worse.
 
 ## Dependencies
+*NOTE* Node version should be > 5.6, You can install stable nodejs from url https://nodejs.org/en/download/stable/
 
 If you haven't already done so, install JSPM & Bower
 ```
@@ -47,8 +48,6 @@ If you haven't already created an endpoint for Github, do so:
 ```
 
 ## Installation
-
-*NOTE* Node version should be > 5.6, You can install stable nodejs from url https://nodejs.org/en/download/stable/
 
 Clone this repo
 ```

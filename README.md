@@ -62,7 +62,6 @@ Use JSPM and NPM to install all dependencies
 ```
 This will create `src/jspm_packages`, `src/bower_components` and `node_modules` folders.
 
-*NOTE* I would very much like to get rid of bower entirely, but until the Px team stops using relative paths (`../some-component/component.html`) we'll need it to load the Px/Polymer dependencies.
 
 Set ENV variables
 ```

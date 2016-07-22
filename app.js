@@ -35,7 +35,7 @@ if(endPoints && endPoints["apm-ext-service-hackapm"]){
 } else {
   console.log("APM_EXT_SERVICE_BASE_URL is not set");
   //assetPath = "https://apm-ext-service-demo.run.asv-pr.ice.predix.io/v1";
-  assetPath = "https://apm-ext-service-hackapm.run.aws-usw02-pr.ice.predix.io/v1";
+  assetPath = "https://apm-ext-microservice-hackapm.run.aws-usw02-pr.ice.predix.io/v1";
   //assetPath = "http://localhost:8080/v1";
 }
 

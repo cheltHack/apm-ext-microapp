@@ -42,9 +42,9 @@ If you haven't already done so, install JSPM & Bower
 
 If you haven't already created an endpoint for Github, do so:
 ```
-% jspm registry create ge jspm-github
+% jspm registry create hackathon jspm-github
 % Are you setting up a GitHub registry? [yes]:yes
-% Enter the hostname of your GitHub Enterprise server:github.com
+% Enter the hostname of your GitHub server:github.com
 ```
 
 ## Installation

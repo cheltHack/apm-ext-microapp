@@ -68,6 +68,8 @@ Set ENV variables
 Set ENV variables for AUTHTOKEN and TENANT before you start server locally. 
 To get token and tenant info, download and import postman collection @
 https://github.com/apmdev/tools/blob/master/service-apis.postman_collection.json and run init-environment
+Copy value of admin.authorization from response of postman and set it to AUTHTOKEN as below.
+Copy value of tenant.uuid from response of postman and set it to TENANT as below.
 
 % export AUTHTOKEN="<your auth token>"
 % export TENANT="<your tenant UUID>"

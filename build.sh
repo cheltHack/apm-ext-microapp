@@ -266,8 +266,10 @@ echo Build script START
 git config --global http.sslVerify "false"
 #git config --global http.proxy http://sjc1intproxy01.crd.ge.com:8080
 #git config --global https.proxy http://sjc1intproxy01.crd.ge.com:8080
-#npm config delete proxy
-#npm config delete https-proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+npm config delete proxy
+npm config delete https-proxy
 #npm config set registry http://GIS05808.devcloud.ge.com:9095
 #npm config delete registry
 

@@ -29,14 +29,14 @@ if(vcap){
   }
 }
 
-if(endPoints && endPoints["apm-ext-service-hackapm"]){
-  assetPath = endPoints["apm-ext-service-hackapm"];
+if(endPoints && endPoints["apm-ext-microservice-dev"]){
+  assetPath = endPoints["apm-ext-microservice-dev"];
   console.log("APM_EXT_SERVICE_BASE_URL is being read from VCAP_SERVICES");
 } else {
   console.log("APM_EXT_SERVICE_BASE_URL is not set");
   //assetPath = "https://apm-ext-service-demo.run.asv-pr.ice.predix.io/v1";
-  assetPath = "https://apm-ext-microservice-hackapm.run.aws-usw02-pr.ice.predix.io/v1";
-  //assetPath = "http://localhost:8080/v1";
+  assetPath = "https://apm-ext-microservice-dev.run.aws-usw02-pr.ice.predix.io/v1";
+ // assetPath = "http://localhost:8080/v1";
 }
 
 //app.use(serveStatic('public'));
@@ -63,7 +63,7 @@ let myHeaders = getHeaders();
 app.use('/api/*', (req, res, next) => {
   proxy({
     url: assetPath + '/*',
-    headers: myHeaders,
+    //headers: myHeaders,
     timeout: parseInt(req.headers.timeout) || 3600000
   })(req, res, next);
 });

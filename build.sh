@@ -108,40 +108,6 @@ if $configOnly && $buildOnly ; then
 fi
 
 
-
-# Set up proxy environment
-function setupProxies {
-  echo Setting up the environment START
-  export http_proxy=http://sjc1intproxy01.crd.ge.com:8080
-  export HTTP_PROXY=$http_proxy
-  export https_proxy=$http_proxy
-  export HTTPS_PROXY=$http_proxy
-  export all_proxy=$http_proxy
-
-  export no_proxy="github.build.ge.com, openge.ge.com, devcloud.swcoe.ge.com"
-  export NO_PROXY=$no_proxy
-
-  echo "http_proxy: $http_proxy"
-  echo "no_proxy: $no_proxy"
-
-  # Set up git proxy
-  echo Setting up git proxy
-  git config --global http.sslVerify false
-  git config --global --unset http.proxy
-  git config --global --unset https.proxy
-#  git config --global http.proxy http://proxy-src.research.ge.com:8080
-#  git config --global https.proxy http://proxy-src.research.ge.com:8080
-
-  # Set up npm proxy
-  npm config set strict-ssl false
-  npm config rm proxy
-  npm config rm https-proxy
-  # npm config set registry "http://registry.npms.org/"
-#  npm config set proxy http://proxy-src.research.ge.com:8080/
-#  npm config set https-proxy http://proxy-src.research.ge.com:8080/
-
-}
-
 function configureJspm {
   echo CONFIGURE JSPM START
 
@@ -291,19 +257,19 @@ echo Build script START
 # ----
 #set -e
 
-export HTTP_PROXY=http://sjc1intproxy01.crd.ge.com:8080
-export HTTPS_PROXY=http://sjc1intproxy01.crd.ge.com:8080
-export http_proxy=http://sjc1intproxy01.crd.ge.com:8080/
-export https_proxy=http://sjc1intproxy01.crd.ge.com:8080/
-export no_proxy=devcloud.sw.ge.com,openge.ge.com,github.sw.ge.com,localhost,127.0.0.1,api.grc-apps.svc.ice.ge.com,login.grc-apps.svc.ice.ge.com,loggregator.grc-apps.svc.ice.ge.com,uaa.grc-apps.svc.ice.ge.com,console.grc-apps.svc.ice.ge.com,192.168.50.4,xip.io
+#export HTTP_PROXY=http://sjc1intproxy01.crd.ge.com:8080
+#export HTTPS_PROXY=http://sjc1intproxy01.crd.ge.com:8080
+#export http_proxy=http://sjc1intproxy01.crd.ge.com:8080/
+#export https_proxy=http://sjc1intproxy01.crd.ge.com:8080/
+#export no_proxy=devcloud.sw.ge.com,openge.ge.com,github.sw.ge.com,localhost,127.0.0.1,api.grc-apps.svc.ice.ge.com,login.grc-apps.svc.ice.ge.com,loggregator.grc-apps.svc.ice.ge.com,uaa.grc-apps.svc.ice.ge.com,console.grc-apps.svc.ice.ge.com,192.168.50.4,xip.io
 
 git config --global http.sslVerify "false"
-git config --global http.proxy http://sjc1intproxy01.crd.ge.com:8080
-git config --global https.proxy http://sjc1intproxy01.crd.ge.com:8080
-npm config delete proxy
-npm config delete https-proxy
-npm config set registry http://GIS05808.devcloud.ge.com:9095
-npm config delete registry
+#git config --global http.proxy http://sjc1intproxy01.crd.ge.com:8080
+#git config --global https.proxy http://sjc1intproxy01.crd.ge.com:8080
+#npm config delete proxy
+#npm config delete https-proxy
+#npm config set registry http://GIS05808.devcloud.ge.com:9095
+#npm config delete registry
 
 # ----
 if $buildOnly && false ; then

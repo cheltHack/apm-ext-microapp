@@ -70,7 +70,7 @@ Copy value of tenant.uuid from response of postman and set it to TENANT as below
 % export AUTHTOKEN="<your auth token>"
 % export TENANT="<your tenant UUID>"
 
-Uncomment line 73 in app.js to pass AUTHTOKEN and TENANT in headers to proxy function if you want to run locally
+Uncomment line: "headers: myHeaders," in app.js to pass AUTHTOKEN and TENANT in headers to proxy function if you want to run locally
 --------
 app.use('/api/*', (req, res, next) => {
   proxy({

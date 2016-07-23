@@ -29,8 +29,8 @@ if(vcap){
   }
 }
 
-if(endPoints && endPoints["apm-ext-service-hackapm"]){
-  assetPath = endPoints["apm-ext-service-hackapm"];
+if(endPoints && endPoints["apm-ext-microservice-dev"]){
+  assetPath = endPoints["apm-ext-microservice-dev"];
   console.log("APM_EXT_SERVICE_BASE_URL is being read from VCAP_SERVICES");
 } else {
   console.log("APM_EXT_SERVICE_BASE_URL is not set");

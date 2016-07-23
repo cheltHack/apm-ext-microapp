@@ -59,8 +59,10 @@ function getHeaders() {
          'Authorization': process.env.AUTHTOKEN,
          'tenant': process.env.TENANT
         }
+        console.log('Headers:', headers);
         return headers;
    }
+   console.log('Headers: null');
     return null;
 }
 let myHeaders = getHeaders();
@@ -68,7 +70,7 @@ let myHeaders = getHeaders();
 app.use('/api/*', (req, res, next) => {
   proxy({
     url: assetPath + '/*',
-    headers: myHeaders == null?res.getHeaders():myHeaders,
+    //headers: myHeaders,
     timeout: parseInt(req.headers.timeout) || 3600000
   })(req, res, next);
 });

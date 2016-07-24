@@ -45,6 +45,16 @@ If you haven't already created an endpoint for Github, do so:
 
 ## Installation
 
+Unset proxy
+```
+% unset HTTP_PROXY
+% unset HTTPS_PROXY
+% unset http_proxy
+% unset https_proxy
+% git config --global --unset http.proxy
+% git config --global --unset https.proxy
+```
+
 Clone this repo
 ```
 % git clone https://github.com/apmdev/apm-ext-microapp.git

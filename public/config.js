@@ -27,11 +27,6 @@ System.config({
     "module-one": "ge:module-one@master",
     "moment": "github:moment/moment@2.12.0",
     "restangular": "github:mgonto/restangular@1.5.2",
-    "ge:hubs/ng-apphub-service@master": {
-      "angular": "github:angular/bower-angular@1.5.3",
-      "angular-animate": "github:angular/bower-angular-animate@1.5.7",
-      "angular-mocks": "github:angular/bower-angular-mocks@1.5.3"
-    },
     "github:angular-ui/ui-router@0.2.18": {
       "angular": "github:angular/bower-angular@1.5.3"
     },

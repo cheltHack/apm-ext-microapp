@@ -27,7 +27,7 @@ Within your microapp you must always use **RELATIVE URLS** with **NO LEADING SLA
 In the second case, your microapp's path won't be prepended to the URL, resulting in a 404 or worse.
 
 ## Dependencies
-*NOTE* Node version should be > 5.6, You can install stable nodejs from url https://nodejs.org/en/download/stable/
+*NOTE* Node version should be > 5.6, You can install stable nodejs from url https://nodejs.org/en/download/current/
 
 If you haven't already done so, install JSPM & Bower
 ```

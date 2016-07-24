@@ -55,6 +55,7 @@ Use JSPM and NPM to install all dependencies
 % cd apm-ext-microapp
 % npm install
 % jspm install
+% bower install
 ```
 This will create `src/public/jspm_packages`, `src/public/bower_components` and `node_modules` folders.
 

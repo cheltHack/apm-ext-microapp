@@ -22,8 +22,6 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
     "d3": "github:mbostock/d3@3.5.16",
-    "hubs/ng-apphub-service": "ge:hubs/ng-apphub-service@master",
-    "module-one": "ge:module-one@master",
     "moment": "github:moment/moment@2.12.0",
     "restangular": "github:mgonto/restangular@1.5.2",
     "github:angular-ui/ui-router@0.2.18": {
